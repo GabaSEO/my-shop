@@ -23,14 +23,31 @@
                         </a>
                     </div>
                     <div id="logo-plus-nav">
-                        <ul>
-                            <li><a href="#">оплата и доставка</a></li>
-                            <li><a href="#">гарантии анонимности</a></li>
-                            <li><a href="#">контакты и адреса</a></li>
-                            <li><a href="#">размерная секта</a></li>
-                        </ul>
-                        
+                        <nav id="upper-nav">
+                           <div id="upper-menu-left"></div>                           
+                            <ul>
+                                <li><a href="#">оплата и доставка</a></li>
+                                <li><a href="#">гарантии анонимности</a></li>
+                                <li><a href="#">контакты и адреса</a></li>
+                                <li style="border-right: 0;"><a href="#">размерная секта</a></li>
+                            </ul>                            
+                            <div id="upper-menu-right"></div>
+                        </nav>
+                        <div class="cls"></div>
+                        <a href="#" class="central-banner">
+                            <img src="image/style/centr_banner.png" width="575" height="134" />
+                        </a>
                     </div>
+                </div>                                
+                <div class="phone-and-basket">
+                    <div class="phone-place">
+                        <p class="title-block-text">Телефон:</p>
+                        <div class="phone-wrapper">
+                            <img src="image/style/tel_icon.png" width="26" height="25" />
+                            050 918-71-96
+                        </div>
+                    </div>
+                    <div class="basket-place"></div>
                 </div>
                 <div id="right-border"></div>
                 <div class="cls"></div>
