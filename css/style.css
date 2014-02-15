@@ -1,0 +1,53 @@
+.cls{
+    clear: both;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    position: relative;    
+    background-color: #dfdedf;    
+}
+
+#page-wrapper{
+    margin: 0 auto;
+    width: 1010px;
+}
+
+#bg-upper{
+    width: 100%;
+    position: absolute;
+    height: 340px;
+    left: 0;
+    top: 0;
+    background-image: url("../image/style/bg-upper.png");
+    background-repeat: repeat-x;
+    z-index: -1;
+}
+
+header{
+    padding-top: 8px;
+}
+
+#left-border{
+    width: 5px;
+    float: left;
+    background-image: url("../image/style/header-left-border.png");    
+    height: 180px;    
+}
+
+#logo{
+    float: left;
+    width: 188px;    
+    background-color: white;
+    padding-top: 7px;
+}
+
+#shop-name{
+    padding-top: 10px;
+}
+
+#logo-plus-nav{
+    float: left;
+    width: 577px;
+}
