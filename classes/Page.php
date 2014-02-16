@@ -8,7 +8,9 @@
             $this->pageType = $type;            
         }
         
-        public function getHeader() {}
+        public function getHeader() {
+            include_once "blocks/header.php";
+        }
         public function getBody() {}
         public function getFooter() {}
     }

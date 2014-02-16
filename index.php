@@ -1,58 +1,75 @@
 <?php
     require_once "classes/Page.php";
     $page = new Page("Main");
+    
+    $page->getHeader();
  ?>
 
-<!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" type="text/css" href="css/clear.css" />
-        <link rel="stylesheet" type="text/css" href="css/style.css" />
-        <title>Shop Name</title>        
-    </head>
-    <body>
-        <div id="page-wrapper">
-            <div id="bg-upper"></div>
-            <header>
-                <div id="left-border"></div>
-                <div id="central-header">
-                    <div id="logo">                        
-                        <a href="#">
-                            <img src="image/style/glamurs.png" width="188" height="23" />
-                            <img id="shop-name" src="image/style/logo_intim.png" width="188" height="134" />
-                        </a>
-                    </div>
-                    <div id="logo-plus-nav">
-                        <nav id="upper-nav">
-                           <div id="upper-menu-left"></div>                           
+           <!-- Центральная часть (контент + навигация) !-->
+            <div id="content">
+                <div class="content-upper-border"></div>
+                <div class="central-part">
+                   <div id="content-left-part">
+                         <div class="catalog-block-place">
+                            <p class="title-block-text">КАТАЛОГ СЕКС-ШОПА</p>
+                            <div class="left-catalog-wrapper">
+                                <ul>
+                                    <li><a href="#">Вагина, мастурбатор</a></li>
+                                    <li><a href="#">Вибраторы</a></li>
+                                    <li><a href="#">Анальные стимуляторы</a></li>
+                                </ul>
+                             </div>
+                        </div>                
+                   </div>                   
+                   <div id="content-right-part">
+                        <nav class="horizontal-category-nav">
+                            <div class="hor-left-upper-corner"></div>
+                            <div class="hor-right-upper-corner"></div>
                             <ul>
-                                <li><a href="#">������ � ��������</a></li>
-                                <li><a href="#">�������� �����������</a></li>
-                                <li><a href="#">�������� � ������</a></li>
-                                <li style="border-right: 0;"><a href="#">��������� �����</a></li>
-                            </ul>                            
-                            <div id="upper-menu-right"></div>
+                                <!-- For men !-->
+                                <li>
+                                    <a class="horiz-cat-links"><div class="cat-nav-icon-men"></div>для мужчин</a>
+                                </li>
+                                <!-- For women !-->
+                                <li>
+                                    <a class="horiz-cat-links"><div class="cat-nav-icon-women"></div>для женщин</a>
+                                </li>
+                                <!-- For couple !-->
+                                <li>
+                                    <a class="horiz-cat-links"><div class="cat-nav-icon-couple"></div>для пары</a>
+                                </li>
+                                <!-- Vibrators !-->
+                                <li>
+                                    <a class="horiz-cat-links"><div class="cat-nav-icon-vibrators"></div>вибраторы</a>
+                                </li>
+                                <!-- Dildo !-->
+                                <li>
+                                    <a class="horiz-cat-links"><div class="cat-nav-icon-dildo"></div>фалоимитаторы</a>
+                                </li>
+                                <!-- To the anus !-->
+                                <li>
+                                    <a class="horiz-cat-links"><div class="cat-nav-icon-anus"></div>для ануса</a>
+                                </li>
+                                <!-- Preparation !-->
+                                <li>
+                                    <a class="horiz-cat-links"><div class="cat-nav-icon-preparation"></div>препараты</a>
+                                </li>
+                                 <!-- Underwear !-->
+                                <li style="border-right: 1px solid #b8b8b8">
+                                    <a class="horiz-cat-links"><div class="cat-nav-icon-underwear"></div>секс белье</a>
+                                </li>
+                            </ul>
+                            <div class="hor-left-bottom-corner"></div>
+                            <div class="hor-right-bottom-corner"></div>
                         </nav>
-                        <div class="cls"></div>
-                        <a href="#" class="central-banner">
-                            <img src="image/style/centr_banner.png" width="575" height="134" />
-                        </a>
-                    </div>
-                </div>                                
-                <div class="phone-and-basket">
-                    <div class="phone-place">
-                        <p class="title-block-text">�������:</p>
-                        <div class="phone-wrapper">
-                            <img src="image/style/tel_icon.png" width="26" height="25" />
-                            050 918-71-96
-                        </div>
-                    </div>
-                    <div class="basket-place"></div>
-                </div>
-                <div id="right-border"></div>
-                <div class="cls"></div>
-            </header>            
-            <div id="content"></div>
+                        <p>
+                            <a href="#"><img src="image/new/bannerpompa.jpg" width="790" height="180" /></a>
+                        </p>                    
+                   </div>
+                   <div class="cls"></div>
+               </div>
+               <div class="content-bottom-border"></div>               
+            </div>
             <footer></footer>
         </div>
     </body>

@@ -29,6 +29,7 @@ body{
 
 header{
     padding-top: 8px;
+    width: 1010px;
 }
 
 #left-border{
@@ -45,6 +46,7 @@ header{
     background-color: white;
     padding-top: 7px;
     padding-bottom: 4px;
+    padding-left: 4px;
 }
 
 #shop-name{
@@ -117,10 +119,11 @@ header{
     float: left;    
     background-color: white;
     padding-left: 10px;
-    padding-right: 8px;
+    padding-right: 5px;
+    padding-bottom: 5px;
 }
 
-.phone-place{
+.block-place{
     background-image: url("../image/style/blok_head.png");
     background-repeat: no-repeat;
     width: 204px;    
@@ -150,6 +153,22 @@ header{
     padding-top: 7px;
 }
 
+.basket-wrapper{
+    text-align: center;
+    font-size: 12px;
+    color: #3A3A3A;    
+    border-bottom: 1px solid #d4d4d4;
+    border-left: 1px solid #d4d4d4;
+    border-right: 1px solid #d4d4d4;
+    padding-bottom: 10px;
+    padding-top: 7px;
+    padding-left: 5px;
+}
+
+.basket-wrapper img{
+    float: left;    
+}
+
 #right-border{
     float: left;
     background-image: url("../image/style/header_right.png");
@@ -157,3 +176,203 @@ header{
     width: 5px;
     height: 180px;
 }
+
+#content{
+    width: 1010px;
+    margin: 0 auto;
+    margin-top: 10px;    
+}
+
+.content-upper-border{
+    width: 1010px;
+    height: 5px;
+    background-image: url("../image/style/central_part_v.png");
+}
+.content-bottom-border{
+    width: 1010px;
+    height: 5px;
+    background-image: url("../image/style/central_part_n.png");
+}
+
+.central-part{
+    width: 1010px;
+    background-color: white;    
+}
+
+#content-left-part{
+    float: left;
+    width: 189px;
+    margin-left: 5px;    
+}
+
+.catalog-block-place{
+    background-image: url("../image/style/head_left_side.png");
+    background-repeat: no-repeat;
+    width: 189px;    
+}
+
+.catalog-block-place .title-block-text{
+    margin: 3px 0 !important;
+}
+
+.left-catalog-wrapper{
+    width: 186px;
+    border-bottom: 1px solid #d4d4d4;
+    border-left: 1px solid #d4d4d4;
+    border-right: 1px solid #d4d4d4;
+    margin-left: 1px;
+}
+
+.left-catalog-wrapper ul{
+    margin: 0;
+    padding: 0;
+    padding-top: 5px;
+}
+
+.left-catalog-wrapper ul li{
+    padding: 8px 5px;
+    text-align: left;   
+    border-bottom: 1px dotted #c0c0c0;
+    
+}
+
+.left-catalog-wrapper ul li a{
+    color: #3a4125;
+    font-family: Tahoma;
+    font-size: 11px;
+    text-decoration: none;
+    font-weight: bold;    
+}
+
+#content-right-part{
+    float: right;
+    width: 800px;
+}
+
+.horizontal-category-nav{
+    width: 786px;
+    position: relative;    
+}
+
+.hor-left-upper-corner{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 4px;
+    background-image: url("../image/style/menu-left-top.png");
+    background-repeat: no-repeat;
+    z-index: 30;
+}
+
+.hor-right-upper-corner{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 5px;
+    height: 4px;
+    background-image: url("../image/style/menu-right-top.png");
+    background-repeat: no-repeat;
+    z-index: 30;
+}
+
+.hor-left-bottom-corner{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 5px;
+    height: 4px;
+    background-image: url("../image/style/menu-left-bottom.png");
+    background-repeat: no-repeat;
+    z-index: 30;
+}
+
+.hor-right-bottom-corner{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 5px;
+    height: 4px;
+    background-image: url("../image/style/menu-right-bottom.png");
+    background-repeat: no-repeat;
+    z-index: 30;
+}
+
+
+.horizontal-category-nav ul{
+    height: 64px;
+    border-top: 1px solid #b8b8b8;
+    border-bottom: 1px solid #b8b8b8;
+}
+
+.horizontal-category-nav ul li{
+    float: left;
+    border-left: 1px solid #b8b8b8;
+    background-color: #fafafa;
+    text-align: center;
+}
+
+.horiz-cat-links{
+    display: block;
+    height: 56px;
+    padding: 4px 14px; 
+    text-transform: lowercase;   
+}
+
+.cat-nav-icon-men{
+    width: 61px;
+    height: 37px;
+    background-image: url("../image/style/men.png");
+}
+
+.cat-nav-icon-women{
+    width: 61px;
+    height: 37px;
+    background-image: url("../image/style/women.png");
+}
+
+.cat-nav-icon-couple{
+    width: 61px;
+    height: 37px;
+    background-image: url("../image/style/couple.png");
+}
+
+.cat-nav-icon-vibrators{
+    width: 61px;
+    height: 37px;
+    background-image: url("../image/style/vibro.png");
+}
+
+
+.cat-nav-icon-dildo{
+    width: 61px;
+    height: 37px;
+    background-image: url("../image/style/dildo.png");
+}
+
+.cat-nav-icon-anus{
+    width: 61px;
+    height: 37px;
+    background-image: url("../image/style/anal.png");
+}
+
+.cat-nav-icon-preparation{
+    width: 61px;
+    height: 37px;
+    background-image: url("../image/style/oil.png");
+}
+
+.cat-nav-icon-underwear{
+    width: 61px;
+    height: 37px;
+    background-image: url("../image/style/underwear.png");    
+}
+
+.horiz-cat-links:hover div{
+    background-position: 0px 37px;    
+}
+
+.horiz-cat-links:hover{
+    cursor: pointer;
+    color: red;
+} 
