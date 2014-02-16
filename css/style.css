@@ -376,3 +376,32 @@ header{
     cursor: pointer;
     color: red;
 } 
+
+.bread-crumbs{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+.bread-crumbs h1{
+    padding: 0;
+    margin: 0;   
+    
+    margin-left: 5px;    
+}
+
+.bread-crumbs a{
+    color: #d3007f;
+    font-size: 11px;
+    display: block;
+    padding: 8px 5px;
+}
+
+.breadcrumbsContainer{
+    float: left;    
+}
+
+.bc_arrow{
+    float: left;
+    padding: 7px 0px;
+}

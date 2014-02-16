@@ -6,8 +6,10 @@
         <title>Shop Name</title>        
         <meta name="description" content="" />
         <meta name="keywords" content="" />
-        <link rel="stylesheet" type="text/css" href="css/clear.css" />
-        <link rel="stylesheet" type="text/css" href="css/style.css" />        
+        <link href="image/favicon/favicon.ico" rel="icon" type="image/x-icon" />        
+  	    <link href="image/favicon/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <link rel="stylesheet" type="text/css" href="/css/clear.css" />
+        <link rel="stylesheet" type="text/css" href="/css/style.css" />        
     </head>
     <body>
         <div id="page-wrapper">
@@ -16,9 +18,9 @@
                 <div id="left-border"></div>
                 <div id="central-header">
                     <div id="logo">                        
-                        <a href="#">
-                            <img src="image/style/glamurs.png" width="188" height="23" />
-                            <img id="shop-name" src="image/style/logo_intim.png" width="188" height="134" />
+                        <a href="/">
+                            <img src="/image/style/glamurs.png" width="188" height="23" />
+                            <img id="shop-name" src="/image/style/logo_intim.png" width="188" height="134" />
                         </a>
                     </div>
                     <div id="logo-plus-nav">
@@ -34,7 +36,7 @@
                         </nav>
                         <div class="cls"></div>
                         <a href="#" class="central-banner">
-                            <img src="image/style/centr_banner.png" width="575" height="134" />
+                            <img src="/image/style/centr_banner.png" width="575" height="134" />
                         </a>
                     </div>
                 </div>                                
@@ -42,15 +44,15 @@
                     <div class="block-place">
                         <p class="title-block-text">Телефон:</p>
                         <div class="phone-wrapper">
-                            <img src="image/style/tel_icon.png" width="26" height="25" />
+                            <img src="/image/style/tel_icon.png" width="26" height="25" />
                             050 918-71-96
                         </div>
                     </div>
                     <div id="basket-place" class="block-place">
                         <p class="title-block-text">В ВАШЕЙ КОРЗИНЕ:</p>
                         <div class="basket-wrapper">
-                            <img src="image/style/cart_icon.png" width="37" height="38" />
-                            <!-- Информация о твоарах в корзине !-->
+                            <img src="/image/style/cart_icon.png" width="37" height="38" />
+                            <!-- Информация о товарах в корзине !-->
                             Корзина пуста
                             <div class="cls"></div>
                         </div>
