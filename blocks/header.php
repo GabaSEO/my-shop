@@ -6,8 +6,8 @@
         <title>Shop Name</title>        
         <meta name="description" content="" />
         <meta name="keywords" content="" />
-        <link href="image/favicon/favicon.ico" rel="icon" type="image/x-icon" />        
-  	    <link href="image/favicon/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <link href="/image/favicon/favicon.ico" rel="icon" type="image/x-icon" />        
+  	    <link href="/image/favicon/favicon.ico" rel="shortcut icon" type="image/x-icon" />
         <link rel="stylesheet" type="text/css" href="/css/clear.css" />
         <link rel="stylesheet" type="text/css" href="/css/style.css" />        
     </head>

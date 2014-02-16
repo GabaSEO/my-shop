@@ -3,8 +3,8 @@
     require_once "Bd.php";
 
     class Page {
-        private $pageType;
-        private $pageData;
+        public $pageType;
+        private $pageData;        
         private $base;
         private $multipage = "Single";
         
@@ -102,12 +102,28 @@
             ';
         }
         
-        public function getCatalog($type){
-            $res = $this->base->query("SELECT * FROM o_products INNER JOIN o_product_type ON o_products.id = o_product_type.id WHERE o_product_type.type = '$type' ");
-            while($row = $res->fetch_array()){
-                echo "<br>".$row['title'];
-            }
+        public function getItems($type){
+            $res = $this->base->query("SELECT * FROM o_products INNER JOIN o_product_type ON o_products.type_id = o_product_type.id WHERE o_product_type.type = '$type' ");            
+            return $res;
         }
+        
+        public function getCatalog($type){
+                        
+            include_once "blocks/catalog.php";            
+        }
+        
+        public function getProdType($type){
+            $dirs = explode("/", $type);
+            $product_type = $dirs[1];
+            return $product_type;
+        }
+        
+        public function getProdName($type){
+            $dirs = explode("/", $type);
+            $product_name = $dirs[2];
+            return $product_name;
+        }
+               
         
         public function getCentralData() {
             if($this->multipage == "Single"){
@@ -126,22 +142,23 @@
                         break;
                 }
             }else{                                
-                $dirs = explode("/", $this->pageType);
-                $product_type = $dirs[1];
+                 $product_type = $this->getProdType($this->pageType);               
                 // Генерируем хлебные крошки
                 $path = "<div class='breadcrumbsContainer'><a href='/'>Главная</a> </div><div class='bc_arrow'>→</div><div class='breadcrumbsContainer'><h1>".$this->pageData['header']."</h1></div>";
+                $dirs = explode("/", $this->pageType);
                 $numbeOfDirs = count($dirs);
                 if($numbeOfDirs > 2){
                     $this->multipage = "AdvancedItem";
-                    $product_name = $dirs[2];
+                    $product_name = $this->getProdName($this->pageType);                    
                     $path = "<div class='breadcrumbsContainer'><a href='/'>Главная</a> → </div><div class='breadcrumbsContainer'><h1>".$this->pageData['header']."</h1>"." → </div><div class='breadcrumbsContainer'><h1>".$product_name."</h1></div>";
                 }
                 // Показываем Bread crumbs
                 echo '
-                    <div class="bread-crumbs">'.$path.'</div>
+                    <div class="bread-crumbs">'.$path.'<div class="cls"></div></div>
                     <div class="cls"></div>
                 ';
-                // End Bread crumbs
+                // End Bread crumbs                
+                
                 
                 if($this->multipage == "AdvancedItem"){
                     // Eto edinitsa tovara                    
